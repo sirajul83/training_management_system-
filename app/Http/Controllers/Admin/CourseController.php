@@ -44,7 +44,8 @@ class CourseController extends Controller
     	$cid->course_id = $request->course_id;
     	$cid->description = $request->description;
     	$cid->save();
-    		Session::flash('success');
+    		
+        Session::flash('success');
 	   	return redirect()->back();
     }
 

@@ -32,9 +32,20 @@
         <li class="header">Admin</li>
         <!-- Optionally, you can a`dd icons to the links -->
         <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Dahsboard</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        
+          <li class="treeview">
+          <a href="#"><i class="fa fa-users"></i> <span>Student </span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url("add-student")}}"> Add Student</a></li>
+            <li><a href="{{ url("student_list")}}">Student List </a></li>
+          </ul>
+        </li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Course </span>
+          <a href="#"><i class="fa fa-address-book"></i> <span>Course </span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -44,6 +55,33 @@
             <li><a href="{{ url("course_list")}}">Course List </a></li>
           </ul>
         </li>
+         <li class="treeview">
+          <a href="#"><i class="fa fa-list-alt"></i> <span>Batch </span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url("add-batch")}}"> Add Batch</a></li>
+            <li><a href="{{ url("batch_list")}}">Batch List </a></li>
+          </ul>
+          <ul class="treeview-menu">
+            <li><a href="{{ url("view-location")}}"> BD Location</a></li>
+            <li><a href="{{ url("batch_list")}}">BD List </a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-list-alt"></i> <span>Location </span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url("view-location")}}"> BD Location</a></li>
+            <li><a href="{{ url("batch_list")}}">BD List </a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-sign-out"></i> <span>Lgout </span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
